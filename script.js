@@ -1,7 +1,7 @@
 const textArr = [
     "Estudante de ADS na FMU", 
     "Desenvolvedor Java & C++", 
-    "Analista na Hapvida",
+    "Operador de atendimento na Hapvida",
     "Buscando Vaga Remota"
 ];
 
