@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Almeida | Dev Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-slate-300 bg-[#020617]">
+
+    <nav class="fixed top-0 w-full z-50 p-6 flex justify-between items-center px-6 md:px-20 bg-[#020617]/90 backdrop-blur-md border-b border-white/5">
+        <div class="text-blue-500 font-black text-2xl tracking-tighter">IA.</div>
+        <div class="flex gap-6 text-[10px] md:text-sm font-bold uppercase tracking-widest">
+            <a href="#home" class="hover:text-blue-500 transition">Início</a>
+            <a href="#about" class="hover:text-blue-500 transition">Sobre</a>
+            <a href="#projects" class="hover:text-blue-500 transition">Projetos</a>
+        </div>
+    </nav>
+
+    <section id="home" class="h-screen flex flex-col justify-center items-center px-6 text-center">
+        <div class="glass p-2 px-4 rounded-full text-xs mb-6 text-blue-400 font-mono border border-blue-500/20">
+            > status: pronto_para_vaga_remota.exe
+        </div>
+        <h1 class="text-5xl md:text-8xl font-black leading-none text-white">
+            IAN <span class="gradient-text">ALMEIDA</span>
+        </h1>
+        <div class="mt-6 text-lg md:text-2xl code-font h-8">
+            <span id="typewriter"></span><span class="cursor"></span>
+        </div>
+        
+        <div class="mt-12 flex gap-4">
+            <a href="https://www.linkedin.com/in/ian-lima-de-almeida-53bbbb348/" target="_blank" class="glass p-4 rounded-2xl hover:text-blue-500 transition-all hover:scale-110"><i class="fab fa-linkedin-in text-2xl"></i></a>
+            <a href="https://github.com/ianlma" target="_blank" class="glass p-4 rounded-2xl hover:text-white transition-all hover:scale-110"><i class="fab fa-github text-2xl"></i></a>
+            <a href="mailto:ianlimadealmeida3@gmail.com" class="glass p-4 rounded-2xl hover:text-emerald-400 transition-all hover:scale-110"><i class="fas fa-envelope text-2xl"></i></a>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 glass rounded-3xl p-8">
+            <h3 class="text-blue-400 font-mono text-sm mb-4">// Sobre Mim</h3>
+            <p class="text-lg text-slate-300 leading-relaxed">
+                Estudante de <span class="text-white font-bold">ADS na FMU</span> (3º semestre). Na Hapvida, atuo com sistemas corporativos e gestão de dados. Traduzo lógica em soluções reais com <span class="text-blue-400 font-bold">Java e C++</span>.
+            </p>
+        </div>
+        <div class="glass rounded-3xl p-8">
+            <h3 class="text-blue-400 font-mono text-sm mb-6">// Stack</h3>
+            <div class="grid grid-cols-2 gap-4 font-bold text-white">
+                <div class="flex items-center gap-2 hover:text-orange-400 transition"><i class="fab fa-java"></i> Java</div>
+                <div class="flex items-center gap-2 hover:text-blue-400 transition"><i class="fas fa-code"></i> C++</div>
+                <div class="flex items-center gap-2 hover:text-emerald-400 transition"><i class="fas fa-database"></i> SQL</div>
+                <div class="flex items-center gap-2 hover:text-orange-600 transition"><i class="fab fa-git-alt"></i> Git</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-black mb-12 uppercase italic text-white">Projetos <span class="text-blue-500">Destaque</span></h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <a href="https://github.com/ianlma/sistema-cadastro-usuarios-java" target="_blank" class="glass rounded-3xl p-6 group block border border-white/5">
+                <div class="h-32 bg-black/40 rounded-2xl mb-4 p-4 text-[10px] code-font text-blue-300 overflow-hidden relative">
+                    <i class="fab fa-java absolute top-2 right-2 text-2xl opacity-10 group-hover:opacity-100 transition text-orange-500"></i>
+                    public class Cadastro {<br>&nbsp;&nbsp;repository.save(u);<br>}
+                </div>
+                <h4 class="font-bold text-white text-lg group-hover:text-blue-400 transition">Cadastro de Usuários</h4>
+                <p class="text-sm text-slate-500 mt-2">Sistema Java focado em POO e persistência de dados.</p>
+            </a>
+
+            <a href="https://github.com/ianlma/algoritmo-bubble-sort-cpp" target="_blank" class="glass rounded-3xl p-6 group block border border-white/5">
+                <div class="h-32 bg-black/40 rounded-2xl mb-4 p-4 text-[10px] code-font text-emerald-300 overflow-hidden relative">
+                    <i class="fas fa-microchip absolute top-2 right-2 text-2xl opacity-10 group-hover:opacity-100 transition text-blue-400"></i>
+                    if (v[j] > v[j+1]) {<br>&nbsp;&nbsp;swap(v[j], v[j+1]);<br>}
+                </div>
+                <h4 class="font-bold text-white text-lg group-hover:text-blue-400 transition">Bubble Sort C++</h4>
+                <p class="text-sm text-slate-500 mt-2">Algoritmos de ordenação e estudo de lógica em C++.</p>
+            </a>
+
+            <a href="https://github.com/ianlma/meus-estudos-logica" target="_blank" class="glass rounded-3xl p-6 group block border border-white/5">
+                <div class="h-32 bg-black/40 rounded-2xl mb-4 p-4 text-[10px] code-font text-orange-300 overflow-hidden relative">
+                    <i class="fas fa-brain absolute top-2 right-2 text-2xl opacity-10 group-hover:opacity-100 transition text-yellow-500"></i>
+                    while(true) {<br>&nbsp;&nbsp;estudar();<br>&nbsp;&nbsp;evoluir();<br>}
+                </div>
+                <h4 class="font-bold text-white text-lg group-hover:text-blue-400 transition">Estudos de Lógica</h4>
+                <p class="text-sm text-slate-500 mt-2">Fundamentos de programação e exercícios base.</p>
+            </a>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
